@@ -1,0 +1,75 @@
+body{
+    color: hsl(0, 0%, 7%);
+    text-align: center;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+}
+main{
+    margin: auto;
+    border-radius: 1rem;
+}
+.container{
+    max-width: 22rem;
+    background-color: hsl(0, 0%, 100%);
+    border: solid hsl(0, 0%, 7%) .1em;
+    
+    text-align: start;
+    box-shadow: .45rem .45rem 0 hsl(0, 0%, 7%);
+    transition: max-width 0.2s ease, box-shadow 0.2s ease;
+    
+}
+.container:hover{
+    max-width: 22.5rem;
+    box-shadow: .5rem .5rem 0 hsl(0, 0%, 7%);
+}
+.image{
+    margin: 1rem 1rem 0 1rem ;
+    border-radius: .6rem;
+    max-width: 91%;
+}
+.wrap{
+    margin: 1rem 1rem 0 1rem ;
+}
+.learning{
+    font-size: 0.9rem;
+    background-color: hsl(47, 88%, 63%);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    font-weight: 800;
+}
+.header{
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+}
+.header:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.logo{
+    width: 2rem;
+    
+}
+.name-author{
+    font-style: bold;
+    font-size: .9rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: .9rem;
+}
+.date{
+    font-size: 0.8rem;
+}
+.desc{
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 42%);
+}
+footer{
+    margin-top: .6rem;
+}
