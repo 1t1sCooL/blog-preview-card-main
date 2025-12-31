@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: blog-preview-card-main-app
-          image: blog-preview-card-main:latest
+          image: blog-preview-card-main-app:latest
           ports:
             - containerPort: 80
           env:
