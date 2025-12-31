@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: blog-preview-card-main
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+    - host: mmalabugin.ru
+      http:
+        paths:
+          - path: /BlogPreviewCard
+            pathType: Prefix
+            backend:
+              service:
+                name: blog-preview-card-main
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - mmalabugin.ru
+      secretName: main-page-tls
